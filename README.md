@@ -1,61 +1,71 @@
-NUMBER_PLATE_RECOGNITION
+NUMBER PLATE RECOGNITION
 Overview
-This project implements a Java-based system for recognizing vehicle number plates. It includes a client-server architecture where the client sends data to the server for processing.
+This project implements a Java-based system for recognizing vehicle number plates. It features a client-server architecture where the client sends data to the server for validation and processing.
 
 Features
-Client-Server communication using sockets.
-GUI for entering and displaying number plate information.
-Real-time data exchange between client and server.
+Client-Server Communication: Uses Java sockets to exchange data between the client and the server.
+Graphical User Interface: Built with Java Swing for intuitive user interaction.
+Validation Logic: Verifies input number plates based on predefined rules.
 Getting Started
 Prerequisites
 Before you begin, ensure you have the following installed:
 
 Java Development Kit (JDK) (version 8 or higher)
-Apache NetBeans IDE (optional but recommended for GUI development)
+Apache NetBeans IDE (optional but recommended for GUI-based projects)
 Installation and Setup
-1.Clone the repository:
+Clone the repository:
 
 bash
-
 git clone https://github.com/RiyaChimaniya/NUMBER_PLATE_RECOGNITION.git
 cd NUMBER_PLATE_RECOGNITION
+Open the project in your preferred Java IDE (e.g., NetBeans or IntelliJ IDEA).
 
-2.Open the project in your IDE (NetBeans or any preferred Java IDE).
-
-3Compile the source files:
+Compile the source files:
 
 bash
-
 javac server.java client.java
+Configure dependencies (if required) or verify that Java Swing and networking libraries are available.
 
 Running the Project
-Server
-
-1.Run the server using:
-
+Step 1: Start the Server
+Navigate to the project directory in your terminal and run the following command:
 bash
 
 java server
-
-2.The server listens on port 4000.
-
-Client
-
->Run the client application:
-
+The server will start and listen on port 4000 for incoming connections.
+Step 2: Start the Client
+In a new terminal window, navigate to the same directory and run:
 bash
 
 java client
 
->Use the GUI to input the number plate, and it will communicate with the server.
+The client application will launch a GUI to enter and validate number plates.
 Dependencies
-The project uses the following:
+This project uses the following:
 
->Java Swing for GUI development.
->Java Networking (sockets) for client-server communication.
+>Java Swing: For building the graphical user interface (GUI).
+>Java Networking (Sockets): For client-server communication.
+
 Configuration
->Ensure that both the client and server are running on the same system or network.
->Update the IP address and port in the client.java file if the server is hosted remotely:
+
+>By default, the server runs locally (i.e., localhost) on port 4000.
+>If the server is hosted on a remote machine, update the IP address and port in the client.java file:
 Java
->
 socket = new Socket("<server-ip>", 4000);
+Project Structure
+Code
+NUMBER_PLATE_RECOGNITION/
+├── client.java   # Client-side application
+├── server.java   # Server-side application
+└── README.md     # Documentation
+How to Use
+Launch the server first to ensure it is ready to accept connections.
+Launch the client and use the GUI to input a vehicle number plate.
+The client sends the input to the server for validation.
+Results are displayed on the client's GUI.
+Contributing
+Contributions are welcome! If you'd like to improve this project:
+
+>Fork the repository.
+>Create a new branch.
+>Submit a pull request with your enhancements.
