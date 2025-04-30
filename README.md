@@ -4,10 +4,12 @@ Overview:
 
 This project implements a Java-based system for recognizing vehicle number plates. It features a client-server architecture where the client sends data to the server for validation and processing.
 
-Features
+Features:-
 
 >Client-Server Communication: Uses Java sockets to exchange data between the client and the server.
+
 >Graphical User Interface: Built with Java Swing for intuitive user interaction.
+
 >Validation Logic: Verifies input number plates based on predefined rules.
 
 Getting Started:
@@ -16,8 +18,9 @@ Getting Started:
 
 Before you begin, ensure you have the following installed:
 
->Java Development Kit (JDK) (version 8 or higher)
->Apache NetBeans IDE (optional but recommended for GUI-based projects).
+Java Development Kit (JDK) (version 8 or higher)
+
+Apache NetBeans IDE (optional but recommended for GUI-based projects).
 
 Installation and Setup:
 
@@ -64,12 +67,14 @@ Dependencies
 This project uses the following:
 
 >Java Swing: For building the graphical user interface (GUI).
+
 >Java Networking (Sockets): For client-server communication.
 
 CONFIGURATION
 
->By default, the server runs locally (i.e., localhost) on port 4000.
->If the server is hosted on a remote machine, update the IP address and port in the client.java file:
+By default, the server runs locally (i.e., localhost) on port 4000.
+
+If the server is hosted on a remote machine, update the IP address and port in the client.java file:
 Java
 
 socket = new Socket("<server-ip>", 4000);
@@ -77,8 +82,11 @@ socket = new Socket("<server-ip>", 4000);
 HOW TO USE:
 
 1.Launch the server first to ensure it is ready to accept connections.
+
 2.Launch the client and use the GUI to input a vehicle number plate.
+
 3.The client sends the input to the server for validation.
+
 4.Results are displayed on the client's GUI.
 
 CONTRIBUTING:
@@ -86,5 +94,7 @@ CONTRIBUTING:
 Contributions are welcome! If you'd like to improve this project:
 
 >Fork the repository.
+
 >Create a new branch.
+
 >Submit a pull request with your enhancements.
